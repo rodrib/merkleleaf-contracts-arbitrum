@@ -1,0 +1,37 @@
+[project]
+src = "src"
+out = "out"
+dot_env = ".env"
+
+[networks.pyevm]
+is_zksync = false
+
+[networks.anvil]
+url = "http://127.0.0.1:8545"
+prompt_live = false
+save_to_db = false
+chain_id = 31337
+
+[networks.sepolia]
+url = "$SEPOLIA_RPC_URL"
+chain_id = 11155111
+save_abi = true
+save_to_db = true
+explorer_uri = "https://api-sepolia.etherscan.io/api"
+
+[networks.arbitrum-sepolia]
+url = "$ARBITRUM_SEPOLIA_RPC_URL"
+chain_id = 421614
+save_abi = true
+save_to_db = true
+explorer_uri = "https://api-sepolia.arbiscan.io/api"
+
+[networks.arbitrum-one]
+url = "$ARBITRUM_ONE_RPC_URL"
+chain_id = 42161
+save_abi = true
+save_to_db = true
+prompt_live = true
+explorer_uri = "https://api.arbiscan.io/api"
+
+# You can view all configuration options at https://cyfrin.github.io/moccasin/all_moccasin_toml_parameters.html

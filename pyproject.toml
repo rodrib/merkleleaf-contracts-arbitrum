@@ -1,0 +1,7 @@
+[project]
+name = "moccasin_project"
+version = "0.1.0"
+description = "MerkleLeaf ForestRegistry contracts - Arbitrum deployment"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = []
